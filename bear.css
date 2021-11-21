@@ -2331,10 +2331,10 @@ b, strong {
 
 :root {
 	--bc-ui__absolute-modal: var(--cl-gray-50);
-	--bt-ui__absolute-modal: 1px solid var(--cl-gray-500);
-	--br-ui__absolute-modal: 1px solid var(--cl-gray-500);
-	--bb-ui__absolute-modal: 1px solid var(--cl-gray-500);
-	--bl-ui__absolute-modal: 1px solid var(--cl-gray-500);
+	--bt-ui__absolute-modal: 1px solid var(--cl-gray-300);
+	--br-ui__absolute-modal: 1px solid var(--cl-gray-300);
+	--bb-ui__absolute-modal: 1px solid var(--cl-gray-300);
+	--bl-ui__absolute-modal: 1px solid var(--cl-gray-300);
 	--bd-ui__absolute-modal: 10px;
 	--sd-ui__absolute-modal: 3px 3px 11px 3px rgba(0,0,0,0.1);
 }
