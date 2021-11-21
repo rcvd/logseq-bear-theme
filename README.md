@@ -8,6 +8,11 @@ A [Bear](https://bear.app) insprired theme for [Logseq](https://logseq.github.io
 - [Flattr](https://flattr.com/@rcvd)
 - [Paypal](https://paypal.me/rcvd)
 
+## How to use it
+Add this to your 'custom.css' page in Logseq:
+
+    @import url('https://rcvd.github.io/logseq-bear-theme/bear.css');
+
 ## Screenshots
 ![Light Mode](screenshots/light.png)
 ![Dark Mode](screenshots/dark.png)
