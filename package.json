@@ -6,10 +6,16 @@
   "logseq": {
     "themes": [
       {
-        "name": "Bear",
+        "name": "Bear - Light",
         "url": "./bear.css",
         "description": "You're braver than you believe, stronger than you seem and smarter than you think. A bear theme for Logseq",
-        "mode": "auto"
+        "mode": "light"
+      },
+      {
+        "name": "Bear - Dark",
+        "url": "./bear.css",
+        "description": "You're braver than you believe, stronger than you seem and smarter than you think. A bear theme for Logseq",
+        "mode": "dark"
       }
     ],
     "id": "bear",
