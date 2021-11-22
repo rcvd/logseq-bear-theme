@@ -1,7 +1,7 @@
 {
   "name": "Bear",
   "author": "Alexander Rink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "You're braver than you believe, stronger than you seem and smarter than you think. A bear theme for Logseq",
   "logseq": {
     "themes": [
@@ -9,13 +9,7 @@
         "name": "Bear",
         "url": "./bear.css",
         "description": "You're braver than you believe, stronger than you seem and smarter than you think. A bear theme for Logseq",
-        "mode": "dark"
-      },
-      {
-          "name": "Bear",
-          "url": "./bear.css",
-          "description": "You're braver than you believe, stronger than you seem and smarter than you think. A bear theme for Logseq",
-          "mode": "light"
+        "mode": "auto"
       }
     ],
     "id": "bear",
