@@ -1103,6 +1103,33 @@ mark {
 	background-color: 		var(--bc-ui__toggle);
 }
 
+div[data-refs-self*='card'] {
+	background-color: 		var(--bc-main__card);
+	border-top: 			var(--bt-main__card);
+	border-right: 			var(--br-main__card);
+	border-bottom: 			var(--bb-main__card);
+	border-left: 			var(--bl-main__card);
+	border-radius: 			var(--bd-main__card);
+	box-shadow: 			var(--sd-main__card);
+	--webkit-box-shadow: 	var(--sd-main__card);
+	color: 					var(--co-main__card);
+}
+
+.cards-title {
+	background-color: 		var(--bc-main__card-title);
+}
+
+.cards-review {
+	background-color: 		var(--bc-main__cards-review);
+	border-top: 			var(--bt-main__cards-review);
+	border-right: 			var(--br-main__cards-review);
+	border-bottom: 			var(--bb-main__cards-review);
+	border-left: 			var(--bl-main__cards-review);
+	border-radius: 			var(--bd-main__cards-review);
+	box-shadow: 			var(--sd-main__cards-review);
+	--webkit-box-shadow: 	var(--sd-main__cards-review);
+}
+
 input,
 textarea,
 [contenteditable] {
@@ -1126,8 +1153,13 @@ textarea,
 	padding-bottom: 10px;	
 }
 
+.left-sidebar-inner .dropdown-wrapper > div > a:first-child {
+	display: none;
+}
+
 .dropdown-wrapper > div > a:first-child {
-	display: none;	
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;	
 }
 
 a.tag {
@@ -2867,5 +2899,53 @@ b, strong {
 
 .dark-theme, html[data-theme=dark] {
 	--bc-ui__toggle: var(--cl-gray-500);
+}
+
+:root {
+	--bc-main__card: white;
+	--bt-main__card: 1px solid var(--cl-gray-200);
+	--br-main__card: 1px solid var(--cl-gray-200);
+	--bb-main__card: 1px solid var(--cl-gray-200);
+	--bl-main__card: 1px solid var(--cl-gray-200);
+	--bd-main__card: 0px;
+	--sd-main__card: 3px 3px 11px 3px rgba(0,0,0,0.1);
+	--co-main__card: ;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-main__card: var(--cl-gray-800);
+	--bt-main__card: 1px solid var(--cl-gray-600);
+	--br-main__card: 1px solid var(--cl-gray-600);
+	--bb-main__card: 1px solid var(--cl-gray-600);
+	--bl-main__card: 1px solid var(--cl-gray-600);
+	--sd-main__card: 3px 3px 11px 3px rgba(0,0,0,0.1);
+	--co-main__card: ;
+}
+
+:root {
+	--bc-main__card-title: transparent;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-main__card-title: transparent;
+}
+
+:root {
+	--bc-main__cards-review: white;
+	--bt-main__cards-review: 1px solid var(--cl-gray-200);
+	--br-main__cards-review: 1px solid var(--cl-gray-200);
+	--bb-main__cards-review: 1px solid var(--cl-gray-200);
+	--bl-main__cards-review: 1px solid var(--cl-gray-200);
+	--bd-main__cards-review: 0px;
+	--sd-main__cards-review: 3px 3px 11px 3px rgba(0,0,0,0.1);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-main__cards-review: var(--cl-gray-800);
+	--bt-main__cards-review: 1px solid var(--cl-gray-600);
+	--br-main__cards-review: 1px solid var(--cl-gray-600);
+	--bb-main__cards-review: 1px solid var(--cl-gray-600);
+	--bl-main__cards-review: 1px solid var(--cl-gray-600);
+	--sd-main__cards-review: 3px 3px 11px 3px rgba(0,0,0,0.1);
 }
 
