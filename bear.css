@@ -1130,6 +1130,15 @@ div[data-refs-self*='card'] {
 	--webkit-box-shadow: 	var(--sd-main__cards-review);
 }
 
+.content .color-level {
+	background-color: 		var(--bc-main__next);
+	border-top: 			var(--bt-main__next);
+	border-right: 			var(--br-main__next);
+	border-bottom: 			var(--bb-main__next);
+	border-left: 			var(--bl-main__next);
+	border-radius: 			var(--bd-main__next);
+}
+
 input,
 textarea,
 [contenteditable] {
@@ -2201,10 +2210,10 @@ b, strong {
 
 .dark-theme, html[data-theme=dark] {
 	--bc-references__item-container: var(--cl-gray-700);
-	--bt-references__item-container: 1px solid black;
-	--br-references__item-container: 1px solid black;
-	--bb-references__item-container: 1px solid black;
-	--bl-references__item-container: 1px solid black;
+	--bt-references__item-container: 1px solid var(--cl-gray-500);
+	--br-references__item-container: 1px solid var(--cl-gray-500);
+	--bb-references__item-container: 1px solid var(--cl-gray-500);
+	--bl-references__item-container: 1px solid var(--cl-gray-500);
 }
 
 :root {
@@ -2947,5 +2956,22 @@ b, strong {
 	--bb-main__cards-review: 1px solid var(--cl-gray-600);
 	--bl-main__cards-review: 1px solid var(--cl-gray-600);
 	--sd-main__cards-review: 3px 3px 11px 3px rgba(0,0,0,0.1);
+}
+
+:root {
+	--bc-main__next: white;
+	--bt-main__next: 1px solid var(--cl-gray-200);
+	--br-main__next: 1px solid var(--cl-gray-200);
+	--bb-main__next: 1px solid var(--cl-gray-200);
+	--bl-main__next: 1px solid var(--cl-gray-200);
+	--bd-main__next: 0px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-main__next: var(--cl-gray-700);
+	--bt-main__next: 1px solid var(--cl-gray-500);
+	--br-main__next: 1px solid var(--cl-gray-500);
+	--bb-main__next: 1px solid var(--cl-gray-500);
+	--bl-main__next: 1px solid var(--cl-gray-500);
 }
 
