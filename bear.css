@@ -1139,6 +1139,15 @@ div[data-refs-self*='card'] {
 	border-radius: 			var(--bd-main__next);
 }
 
+.block-properties {
+	background-color: 		var(--bc-main__block-properties);
+	border-top: 			var(--bt-main__block-properties);
+	border-right: 			var(--br-main__block-properties);
+	border-bottom: 			var(--bb-main__block-properties);
+	border-left: 			var(--bl-main__block-properties);
+	border-radius: 			var(--bd-main__block-properties);
+}
+
 input,
 textarea,
 [contenteditable] {
@@ -2973,5 +2982,22 @@ b, strong {
 	--br-main__next: 1px solid var(--cl-gray-500);
 	--bb-main__next: 1px solid var(--cl-gray-500);
 	--bl-main__next: 1px solid var(--cl-gray-500);
+}
+
+:root {
+	--bc-main__block-properties: white;
+	--bt-main__block-properties: 1px solid var(--cl-gray-200);
+	--br-main__block-properties: 1px solid var(--cl-gray-200);
+	--bb-main__block-properties: 1px solid var(--cl-gray-200);
+	--bl-main__block-properties: 1px solid var(--cl-gray-200);
+	--bd-main__block-properties: 0px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-main__block-properties: var(--cl-gray-700);
+	--bt-main__block-properties: 1px solid var(--cl-gray-500);
+	--br-main__block-properties: 1px solid var(--cl-gray-500);
+	--bb-main__block-properties: 1px solid var(--cl-gray-500);
+	--bl-main__block-properties: 1px solid var(--cl-gray-500);
 }
 
