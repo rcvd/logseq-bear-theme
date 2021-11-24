@@ -1177,7 +1177,7 @@ a.tag {
 }
 
 b, strong {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .CodeMirror-gutter {
@@ -1533,7 +1533,7 @@ b, strong {
 	--ff-journal__item-container: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-journal__item-container: 1.6em;
 	--ft-journal__item-container: ;
-	--fw-journal__item-container: 500;
+	--fw-journal__item-container: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1813,7 +1813,7 @@ b, strong {
 	--ff-main__h1: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h1: 1.5em;
 	--ft-main__h1: ;
-	--fw-main__h1: 500;
+	--fw-main__h1: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1826,7 +1826,7 @@ b, strong {
 	--ff-main__h1-title: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h1-title: 1.6em;
 	--ft-main__h1-title: ;
-	--fw-main__h1-title: 500;
+	--fw-main__h1-title: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1839,7 +1839,7 @@ b, strong {
 	--ff-main__h2: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h2: 1.3em;
 	--ft-main__h2: ;
-	--fw-main__h2: 500;
+	--fw-main__h2: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1853,7 +1853,7 @@ b, strong {
 	--ff-main__h3: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h3: 1.1em;
 	--ft-main__h3: ;
-	--fw-main__h3: 500;
+	--fw-main__h3: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1867,7 +1867,7 @@ b, strong {
 	--ff-main__h4: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h4: 1em;
 	--ft-main__h4: ;
-	--fw-main__h4: 500;
+	--fw-main__h4: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1881,7 +1881,7 @@ b, strong {
 	--ff-main__h5: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h5: 1em;
 	--ft-main__h5: ;
-	--fw-main__h5: 500;
+	--fw-main__h5: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -1895,7 +1895,7 @@ b, strong {
 	--ff-main__h6: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-main__h6: 1em;
 	--ft-main__h6: ;
-	--fw-main__h6: 500;
+	--fw-main__h6: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -2030,7 +2030,7 @@ b, strong {
 	--ff-main__todo-marker: ;
 	--fs-main__todo-marker: ;
 	--ft-main__todo-marker: ;
-	--fw-main__todo-marker: 500;
+	--fw-main__todo-marker: 600;
 }
 
 .dark-theme, html[data-theme=dark] {
@@ -2229,7 +2229,7 @@ b, strong {
 	--ff-references__title: 'avenir next', avenir, 'Nunito Sans', segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	--fs-references__title: 0.9em;
 	--ft-references__title: ;
-	--fw-references__title: 500;
+	--fw-references__title: 600;
 	--tt-references__title: uppercase;
 	--op-references__title: 1;
 }
