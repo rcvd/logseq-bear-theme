@@ -3057,3 +3057,15 @@ b, strong {
 	--bc-ui__toggle: var(--cl-gray-500);
 }
 
+/* Compatible Patches for https://github.com/logseq/logseq/pull/3376 */
+#left-sidebar {
+  background-color: transparent;
+}
+
+#left-sidebar .left-sidebar-inner {
+  background-color: var(--bc-leftsidebar__container)
+}
+
+#left-sidebar .left-sidebar-inner a {
+  color: var(--co-leftsidebar__menu-items);
+}
