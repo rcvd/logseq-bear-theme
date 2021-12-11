@@ -1216,6 +1216,37 @@ p {
 	border-radius: 			var(--bd-page-block-menu__scrollbar-thumb);
 }
 
+.ui__button[intent=logseq]:hover {
+	background-color: 		var(--bc-plugins__button--hover);
+	border-top: 			var(--bt-plugins__button--hover);
+	border-right: 			var(--br-plugins__button--hover);
+	border-bottom: 			var(--bb-plugins__button--hover);
+	border-left: 			var(--bl-plugins__button--hover);
+	border-radius: 			var(--bd-plugins__button--hover);
+	color: 					var(--co-plugins__button--hover);
+}
+
+.ui__button[intent=logseq] {
+	background-color: 		var(--bc-plugins__button);
+	border-top: 			var(--bt-plugins__button);
+	border-right: 			var(--br-plugins__button);
+	border-bottom: 			var(--bb-plugins__button);
+	border-left: 			var(--bl-plugins__button);
+	border-radius: 			var(--bd-plugins__button);
+	color: 					var(--co-plugins__button);
+}
+
+.cp__plugins-item-card {
+	background-color: 		var(--bc-plugins__item-card);
+	border-top: 			var(--bt-plugins__item-card);
+	border-right: 			var(--br-plugins__item-card);
+	border-bottom: 			var(--bb-plugins__item-card);
+	border-left: 			var(--bl-plugins__item-card);
+	border-radius: 			var(--bd-plugins__item-card);
+	color: 					var(--co-plugins__item-card);
+	font-family: 			var(--ff-plugins__item-card);
+}
+
 .references .content .color-level {
 	background-color: 		var(--bc-references__content);
 	border-top: 			var(--bt-references__content);
@@ -4023,6 +4054,64 @@ a.tag {
 
 .dark-theme, html[data-theme=dark] {
 	--bc-page-block-menu__scrollbar-thumb: var(--cl-darkgray);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-plugins__button--hover: var(--cl-valencia);
+	--bt-plugins__button--hover: 1px solid var(--cl-valencia);
+	--br-plugins__button--hover: 1px solid var(--cl-valencia);
+	--bb-plugins__button--hover: 1px solid var(--cl-valencia);
+	--bl-plugins__button--hover: 1px solid var(--cl-valencia);
+	--bd-plugins__button--hover: 5px;
+	--co-plugins__button--hover: var(--cl-white);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-plugins__button--hover: var(--cl-denim);
+	--bt-plugins__button--hover: 1px solid var(--cl-denim);
+	--br-plugins__button--hover: 1px solid var(--cl-denim);
+	--bb-plugins__button--hover: 1px solid var(--cl-denim);
+	--bl-plugins__button--hover: 1px solid var(--cl-denim);
+	--co-plugins__button--hover: var(--cl-white);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-plugins__button: transparent;
+	--bt-plugins__button: 1px solid var(--cl-athens);
+	--br-plugins__button: 1px solid var(--cl-athens);
+	--bb-plugins__button: 1px solid var(--cl-athens);
+	--bl-plugins__button: 1px solid var(--cl-athens);
+	--bd-plugins__button: 5px;
+	--co-plugins__button: var(--cl-mineshaft);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-plugins__button: transparent;
+	--bt-plugins__button: 1px solid var(--cl-darkgray);
+	--br-plugins__button: 1px solid var(--cl-darkgray);
+	--bb-plugins__button: 1px solid var(--cl-darkgray);
+	--bl-plugins__button: 1px solid var(--cl-darkgray);
+	--co-plugins__button: var(--cl-mutedwhite);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-plugins__item-card: var(--cl-white);
+	--bt-plugins__item-card: 1px solid var(--cl-gainsboro);
+	--br-plugins__item-card: 1px solid var(--cl-gainsboro);
+	--bb-plugins__item-card: 1px solid var(--cl-gainsboro);
+	--bl-plugins__item-card: 1px solid var(--cl-gainsboro);
+	--bd-plugins__item-card: 2px;
+	--co-plugins__item-card: var(--cl-mineshaft);
+	--ff-plugins__item-card: 'avenir next',avenir, 'Nunito Sans';
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-plugins__item-card: var(--cl-mutedblack);
+	--bt-plugins__item-card: 1px solid var(--cl-darkgray);
+	--br-plugins__item-card: 1px solid var(--cl-darkgray);
+	--bb-plugins__item-card: 1px solid var(--cl-darkgray);
+	--bl-plugins__item-card: 1px solid var(--cl-darkgray);
+	--co-plugins__item-card: var(--cl-white);
 }
 
 :root, .white-theme, html[data-theme=white] {
