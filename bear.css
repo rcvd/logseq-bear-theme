@@ -1844,6 +1844,37 @@ p {
 	background-color: 		var(--bc-ui__toggle);
 }
 
+.zotero-settings .form-input {
+	background-color: 		var(--bc-zotero__form-input);
+	border-top: 			var(--bt-zotero__form-input);
+	border-right: 			var(--br-zotero__form-input);
+	border-bottom: 			var(--bb-zotero__form-input);
+	border-left: 			var(--bl-zotero__form-input);
+	border-radius: 			var(--bd-zotero__form-input);
+	color: 					var(--co-zotero__form-input);
+}
+
+.zotero-settings .form-select {
+	background-color: 		var(--bc-zotero__form-select);
+	border-top: 			var(--bt-zotero__form-select);
+	border-right: 			var(--br-zotero__form-select);
+	border-bottom: 			var(--bb-zotero__form-select);
+	border-left: 			var(--bl-zotero__form-select);
+	border-radius: 			var(--bd-zotero__form-select);
+	color: 					var(--co-zotero__form-select);
+}
+
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) .slide button.navigate-left, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) .slide button.navigate-right {
+	border-top: 			var(--bt-slides__navigate);
+	border-right: 			var(--br-slides__navigate);
+	border-bottom: 			var(--bb-slides__navigate);
+	border-left: 			var(--bl-slides__navigate);
+}
+
+.reveal {
+	background-color: 		var(--bc-slides__reveal);
+}
+
 /* Fixes for command palette and search */
 .cp__palette-main .chosen {
 	background: transparent;
@@ -5227,7 +5258,7 @@ a.tag {
 }
 
 .dark-theme, html[data-theme=dark] {
-	--bc-ui__toggle--checked: var(--cl-charcoal);
+	--bc-ui__toggle--checked: var(--cl-denim);
 }
 
 :root, .white-theme, html[data-theme=white] {
@@ -5235,6 +5266,66 @@ a.tag {
 }
 
 .dark-theme, html[data-theme=dark] {
-	--bc-ui__toggle: var(--cl-denim);
+	--bc-ui__toggle: var(--cl-charcoal);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-zotero__form-input: transparent;
+	--bt-zotero__form-input: 1px solid var(--cl-athens);
+	--br-zotero__form-input: 1px solid var(--cl-athens);
+	--bb-zotero__form-input: 1px solid var(--cl-athens);
+	--bl-zotero__form-input: 1px solid var(--cl-athens);
+	--bd-zotero__form-input: 5px;
+	--co-zotero__form-input: var(--cl-mineshaft);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-zotero__form-input: transparent;
+	--bt-zotero__form-input: 1px solid var(--cl-darkgray);
+	--br-zotero__form-input: 1px solid var(--cl-darkgray);
+	--bb-zotero__form-input: 1px solid var(--cl-darkgray);
+	--bl-zotero__form-input: 1px solid var(--cl-darkgray);
+	--co-zotero__form-input: var(--cl-mutedwhite);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-zotero__form-select: transparent;
+	--bt-zotero__form-select: 1px solid var(--cl-athens);
+	--br-zotero__form-select: 1px solid var(--cl-athens);
+	--bb-zotero__form-select: 1px solid var(--cl-athens);
+	--bl-zotero__form-select: 1px solid var(--cl-athens);
+	--bd-zotero__form-select: 5px;
+	--co-zotero__form-select: var(--cl-mineshaft);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-zotero__form-select: transparent;
+	--bt-zotero__form-select: 1px solid var(--cl-darkgray);
+	--br-zotero__form-select: 1px solid var(--cl-darkgray);
+	--bb-zotero__form-select: 1px solid var(--cl-darkgray);
+	--bl-zotero__form-select: 1px solid var(--cl-darkgray);
+	--co-zotero__form-select: var(--cl-mutedwhite);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bt-slides__navigate: transparent;
+	--br-slides__navigate: transparent;
+	--bb-slides__navigate: transparent;
+	--bl-slides__navigate: transparent;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bt-slides__navigate: transparent;
+	--br-slides__navigate: transparent;
+	--bb-slides__navigate: transparent;
+	--bl-slides__navigate: transparent;
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-slides__reveal: var(--cl-white);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-slides__reveal: var(--cl-black);
 }
 
