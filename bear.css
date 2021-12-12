@@ -188,8 +188,19 @@ html[data-theme=light] {
 	background-color: 		var(--bc-app__container);
 }
 
-.cp__right-sidebar .cards-title, .ui__modal .cards-title {
+.cp__right-sidebar .cards-title, .ui__modal .cards-title, .cards-review .cards-title {
 	background-color: 		var(--bc-cards__title);
+}
+
+.cards-review {
+	background-color: 		var(--bc-cards__review);
+	border-top: 			var(--bt-cards__review);
+	border-right: 			var(--br-cards__review);
+	border-bottom: 			var(--bb-cards__review);
+	border-left: 			var(--bl-cards__review);
+	border-radius: 			var(--bd-cards__review);
+	box-shadow: 			var(--sd-cards__review)!important;
+	--webkit-box-shadow: 	var(--sd-cards__review)!important;
 }
 
 .block-content .asset-container .ctl>a {
@@ -2215,6 +2226,25 @@ a.tag {
 
 .dark-theme, html[data-theme=dark] {
 	--bc-cards__title: transparent;
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-cards__review: var(--cl-white);
+	--bt-cards__review: 1px solid var(--cl-gainsboro);
+	--br-cards__review: 1px solid var(--cl-gainsboro);
+	--bb-cards__review: 1px solid var(--cl-gainsboro);
+	--bl-cards__review: 1px solid var(--cl-gainsboro);
+	--bd-cards__review: 2px;
+	--sd-cards__review: none;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-cards__review: var(--cl-mutedblack);
+	--bt-cards__review: 1px solid var(--cl-darkgray);
+	--br-cards__review: 1px solid var(--cl-darkgray);
+	--bb-cards__review: 1px solid var(--cl-darkgray);
+	--bl-cards__review: 1px solid var(--cl-darkgray);
+	--sd-cards__review: none;
 }
 
 :root, .white-theme, html[data-theme=white] {
