@@ -310,6 +310,24 @@ html[data-theme=light] {
 	color: 					var(--cl-jumbo);
 }
 
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-gallery);
+	border-right: 			1px solid var(--cl-gallery);
+	border-bottom: 			1px solid var(--cl-gallery);
+	border-left: 			1px solid var(--cl-gallery);
+	border-radius: 			15px;
+	color: 					var(--cl-iron);
+}
+.dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover) {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-shark);
+	border-right: 			1px solid var(--cl-shark);
+	border-bottom: 			1px solid var(--cl-shark);
+	border-left: 			1px solid var(--cl-shark);
+	color: 					var(--cl-jumbo);
+}
+
 .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-gallery);
 }
