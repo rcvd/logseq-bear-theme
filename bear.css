@@ -188,10 +188,6 @@ html[data-theme=light] {
 	background-color: 		var(--bc-app__container);
 }
 
-.cp__right-sidebar .cards-title, .ui__modal .cards-title, .cards-review .cards-title {
-	background-color: 		var(--bc-cards__title);
-}
-
 .cards-review {
 	background-color: 		var(--bc-cards__review);
 	border-top: 			var(--bt-cards__review);
@@ -201,6 +197,10 @@ html[data-theme=light] {
 	border-radius: 			var(--bd-cards__review);
 	box-shadow: 			var(--sd-cards__review)!important;
 	--webkit-box-shadow: 	var(--sd-cards__review)!important;
+}
+
+.cp__right-sidebar .cards-title, .ui__modal .cards-title, .cards-review .cards-title {
+	background-color: 		var(--bc-cards__title);
 }
 
 .block-content .asset-container .ctl>a {
@@ -1148,6 +1148,32 @@ a svg {
 	color: 					var(--co-leftsidebar__recent-item-icon);
 }
 
+.left-sidebar-inner::-webkit-scrollbar-track {
+	background-color: 		var(--bc-leftsidebar__scrollbar-background);
+}
+
+.left-sidebar-inner::-webkit-scrollbar-thumb {
+	background-color: 		var(--bc-leftsidebar__scrollbar-thumb);
+	border-radius: 			var(--bd-leftsidebar__scrollbar-thumb);
+}
+
+.ui__notifications button:hover svg {
+	color: 					var(--co-notification__close-button--hover);
+}
+
+.ui__notifications button svg {
+	color: 					var(--co-notification__close-button);
+}
+
+.ui__notifications .notification-area {
+	background-color: 		var(--bc-notification__container)!important;
+	border-top: 			var(--bt-notification__container);
+	border-right: 			var(--br-notification__container);
+	border-bottom: 			var(--bb-notification__container);
+	border-left: 			var(--bl-notification__container);
+	border-radius: 			var(--bd-notification__container);
+}
+
 .absolute-modal {
 	background-color: 		var(--bc-page-block-menu__container);
 	border-top: 			var(--bt-page-block-menu__container);
@@ -1567,7 +1593,7 @@ a svg {
 	color: 					var(--co-search-results__search-item-page-ref);
 }
 
-.cp__settings-inner .admonition-icon {
+.cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon {
 	border-right: 			var(--br-settings__admonition-icon);
 }
 
@@ -1668,6 +1694,15 @@ a svg {
 	color: 					var(--co-settings__menu-item);
 }
 
+.cp__settings-inner>article::-webkit-scrollbar-track {
+	background-color: 		var(--bc-settings__scrollbar-background);
+}
+
+.cp__settings-inner>article::-webkit-scrollbar-thumb {
+	background-color: 		var(--bc-settings__scrollbar-thumb);
+	border-radius: 			var(--bd-settings__scrollbar-thumb);
+}
+
 .cp__settings-inner>aside {
 	border-right: 			var(--br-settings__sidebar);
 }
@@ -1678,6 +1713,14 @@ a svg {
 	border-bottom: 			var(--bb-settings__theme-mode--active);
 	border-left: 			var(--bl-settings__theme-mode--active);
 	border-radius: 			var(--bd-settings__theme-mode--active);
+}
+
+.cp__settings-main>header h1 {
+	color: 					var(--co-settings__title);
+	font-family: 			var(--ff-settings__title);
+	font-size: 				var(--fs-settings__title);
+	font-style: 			var(--ft-settings__title);
+	font-weight: 			var(--fw-settings__title);
 }
 
 .cp__settings-inner .cp__settings-app-updater .update-state {
@@ -1844,6 +1887,15 @@ a svg {
 .ui__modal-close svg {
 	color: 					var(--co-ui__modal-close);
 	opacity: 				var(--op-ui__modal-close);
+}
+
+.ui__modal-panel .panel-content::-webkit-scrollbar-track {
+	background-color: 		var(--bc-ui__panel-scrollbar-background);
+}
+
+.ui__modal-panel .panel-content::-webkit-scrollbar-thumb {
+	background-color: 		var(--bc-ui__panel-scrollbar-thumb);
+	border-radius: 			var(--bd-ui__panel-scrollbar-thumb);
 }
 
 .ui__toggle .wrapper[aria-checked='true'] {
@@ -2221,14 +2273,6 @@ a.tag {
 }
 
 :root, .white-theme, html[data-theme=white] {
-	--bc-cards__title: transparent;
-}
-
-.dark-theme, html[data-theme=dark] {
-	--bc-cards__title: transparent;
-}
-
-:root, .white-theme, html[data-theme=white] {
 	--bc-cards__review: var(--cl-white);
 	--bt-cards__review: 1px solid var(--cl-gainsboro);
 	--br-cards__review: 1px solid var(--cl-gainsboro);
@@ -2245,6 +2289,14 @@ a.tag {
 	--bb-cards__review: 1px solid var(--cl-darkgray);
 	--bl-cards__review: 1px solid var(--cl-darkgray);
 	--sd-cards__review: none;
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-cards__title: transparent;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-cards__title: transparent;
 }
 
 :root, .white-theme, html[data-theme=white] {
@@ -3998,6 +4050,56 @@ a.tag {
 }
 
 :root, .white-theme, html[data-theme=white] {
+	--bc-leftsidebar__scrollbar-background: var(--cl-codgrey);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-leftsidebar__scrollbar-background: var(--cl-mutedblack);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-leftsidebar__scrollbar-thumb: var(--cl-boulder);
+	--bd-leftsidebar__scrollbar-thumb: 8px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-leftsidebar__scrollbar-thumb: var(--cl-darkgray);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--co-notification__close-button--hover: var(--cl-stardust);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--co-notification__close-button--hover: var(--cl-chicago);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--co-notification__close-button: var(--cl-iron);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--co-notification__close-button: var(--cl-shark);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-notification__container: var(--cl-alabaster);
+	--bt-notification__container: 1px solid var(--cl-pumice);
+	--br-notification__container: 1px solid var(--cl-pumice);
+	--bb-notification__container: 1px solid var(--cl-pumice);
+	--bl-notification__container: 1px solid var(--cl-pumice);
+	--bd-notification__container: 10px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-notification__container: var(--cl-mutedblack);
+	--bt-notification__container: 1px solid var(--cl-bunker);
+	--br-notification__container: 1px solid var(--cl-bunker);
+	--bb-notification__container: 1px solid var(--cl-bunker);
+	--bl-notification__container: 1px solid var(--cl-bunker);
+}
+
+:root, .white-theme, html[data-theme=white] {
 	--bc-page-block-menu__container: var(--cl-alabaster);
 	--bt-page-block-menu__container: 1px solid var(--cl-pumice);
 	--br-page-block-menu__container: 1px solid var(--cl-pumice);
@@ -4877,7 +4979,7 @@ a.tag {
 }
 
 .dark-theme, html[data-theme=dark] {
-	--bb-settings__header: 1px solid var(--cl-charcoal);
+	--bb-settings__header: 1px solid var(--cl-bunker);
 }
 
 :root, .white-theme, html[data-theme=white] {
@@ -4980,11 +5082,28 @@ a.tag {
 }
 
 :root, .white-theme, html[data-theme=white] {
+	--bc-settings__scrollbar-background: var(--cl-alabaster);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-settings__scrollbar-background: var(--cl-mutedblack);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-settings__scrollbar-thumb: var(--cl-boulder);
+	--bd-settings__scrollbar-thumb: 8px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-settings__scrollbar-thumb: var(--cl-darkgray);
+}
+
+:root, .white-theme, html[data-theme=white] {
 	--br-settings__sidebar: 1px solid var(--cl-athens);
 }
 
 .dark-theme, html[data-theme=dark] {
-	--br-settings__sidebar: 1px solid var(--cl-charcoal);
+	--br-settings__sidebar: 1px solid var(--cl-bunker);
 }
 
 :root, .white-theme, html[data-theme=white] {
@@ -5000,6 +5119,18 @@ a.tag {
 	--br-settings__theme-mode--active: 2px solid var(--cl-denim);
 	--bb-settings__theme-mode--active: 2px solid var(--cl-denim);
 	--bl-settings__theme-mode--active: 2px solid var(--cl-denim);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--co-settings__title: var(--cl-mineshaft);
+	--ff-settings__title: 'avenir next',avenir, 'Nunito Sans';
+	--fs-settings__title: 1.5rem;
+	--ft-settings__title: normal;
+	--fw-settings__title: 500;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--co-settings__title: var(--cl-botticelli);
 }
 
 :root, .white-theme, html[data-theme=white] {
@@ -5310,6 +5441,23 @@ a.tag {
 
 .dark-theme, html[data-theme=dark] {
 	--co-ui__modal-close: var(--cl-shark);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-ui__panel-scrollbar-background: var(--cl-alabaster);
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-ui__panel-scrollbar-background: var(--cl-mutedblack);
+}
+
+:root, .white-theme, html[data-theme=white] {
+	--bc-ui__panel-scrollbar-thumb: var(--cl-boulder);
+	--bd-ui__panel-scrollbar-thumb: 8px;
+}
+
+.dark-theme, html[data-theme=dark] {
+	--bc-ui__panel-scrollbar-thumb: var(--cl-darkgray);
 }
 
 :root, .white-theme, html[data-theme=white] {
