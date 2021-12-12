@@ -438,6 +438,13 @@ html[data-theme=light] {
 	background-color: 		var(--cl-charcoal);
 }
 
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a:hover>.bullet-container {
+	background-color: 		var(--cl-athens);
+}
+.dark-theme *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a:hover>.bullet-container, html[data-theme=dark] *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a:hover>.bullet-container {
+	background-color: 		var(--cl-charcoal);
+}
+
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card)  button:hover {
 	background-color: 		var(--cl-valencia);
 	border-top: 			1px solid var(--cl-valencia);
