@@ -164,6 +164,15 @@ html[data-theme=light] {
 	color: 					var(--cl-mutedwhite);
 }
 
+.cp__all_pages .actions .r a.journal {
+	background-color: 		transparent;
+	color: 					var(--cl-mineshaft);
+}
+.dark-theme .cp__all_pages .actions .r a.journal, html[data-theme=dark] .cp__all_pages .actions .r a.journal {
+	background-color: 		transparent;
+	color: 					var(--cl-mutedwhite);
+}
+
 .cp__all_pages tr:nth-child(odd) {
 	background-color: 		transparent;
 	border-top: 			transparent;
@@ -177,6 +186,13 @@ html[data-theme=light] {
 	border-right: 			transparent;
 	border-bottom: 			1px solid var(--cl-black);
 	border-left: 			transparent;
+}
+
+.cp__all_pages .paginates>span {
+	color: 					var(--cl-);
+}
+.dark-theme .cp__all_pages .paginates>span, html[data-theme=dark] .cp__all_pages .paginates>span {
+	color: 					var(--cl-);
 }
 
 .cp__all_pages .actions .search-wrap .form-input:focus {
@@ -2669,10 +2685,10 @@ a svg {
 	color: 					var(--cl-stardust);
 }
 
-.cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon {
+.cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon, .cp__plugins-page .admonition-icon {
 	border-right: 			1px solid var(--cl-athens);
 }
-.dark-theme .cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon, html[data-theme=dark] .cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon {
+.dark-theme .cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon, .cp__plugins-page .admonition-icon, html[data-theme=dark] .cp__settings-inner .admonition-icon, .zotero-settings .admonition-icon, .cp__plugins-page .admonition-icon {
 	border-right: 			1px solid var(--cl-charcoal);
 }
 
@@ -3242,6 +3258,99 @@ a svg {
 	border-right: 			1px solid var(--cl-darkgray);
 	border-bottom: 			1px solid var(--cl-darkgray);
 	border-left: 			1px solid var(--cl-darkgray);
+	color: 					var(--cl-mutedwhite);
+}
+
+.cp__themes-installed>.it.is-active {
+	background-color: 		var(--cl-valencia);
+	border-top: 			1px solid var(--cl-valencia);
+	border-right: 			1px solid var(--cl-valencia);
+	border-bottom: 			1px solid var(--cl-valencia);
+	border-left: 			1px solid var(--cl-valencia);
+	border-radius: 			5px;
+	color: 					var(--cl-);
+}
+.dark-theme .cp__themes-installed>.it.is-active, html[data-theme=dark] .cp__themes-installed>.it.is-active {
+	background-color: 		var(--cl-denim);
+	border-top: 			1px solid var(--cl-denim);
+	border-right: 			1px solid var(--cl-denim);
+	border-bottom: 			1px solid var(--cl-denim);
+	border-left: 			1px solid var(--cl-denim);
+	color: 					var(--cl-white);
+}
+
+.cp__themes-installed>.it {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-athens);
+	border-right: 			1px solid var(--cl-athens);
+	border-bottom: 			1px solid var(--cl-athens);
+	border-left: 			1px solid var(--cl-athens);
+	border-radius: 			5px;
+	color: 					var(--cl-);
+}
+.dark-theme .cp__themes-installed>.it, html[data-theme=dark] .cp__themes-installed>.it {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-darkgray);
+	border-right: 			1px solid var(--cl-darkgray);
+	border-bottom: 			1px solid var(--cl-darkgray);
+	border-left: 			1px solid var(--cl-darkgray);
+	color: 					var(--cl-mutedwhite);
+}
+
+.cp__plugins-item-card>.r .ctl .de .menu-list {
+	background-color: 		var(--cl-alabaster);
+	border-top: 			1px solid var(--cl-pumice);
+	border-right: 			1px solid var(--cl-pumice);
+	border-bottom: 			1px solid var(--cl-pumice);
+	border-left: 			1px solid var(--cl-pumice);
+	border-radius: 			10px;
+	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.dark-theme .cp__plugins-item-card>.r .ctl .de .menu-list, html[data-theme=dark] .cp__plugins-item-card>.r .ctl .de .menu-list {
+	background-color: 		var(--cl-mutedblack);
+	border-top: 			1px solid var(--cl-bunker);
+	border-right: 			1px solid var(--cl-bunker);
+	border-bottom: 			1px solid var(--cl-bunker);
+	border-left: 			1px solid var(--cl-bunker);
+	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cp__plugins-item-card>.r .ctl .de .menu-list>li:hover {
+	background-color: 		var(--cl-valencia)!important;
+	border-top: 			transparent;
+	border-right: 			transparent;
+	border-bottom: 			transparent;
+	border-left: 			transparent;
+	border-radius: 			5px!important;
+	color: 					var(--cl-white);
+}
+.dark-theme .cp__plugins-item-card>.r .ctl .de .menu-list>li:hover, html[data-theme=dark] .cp__plugins-item-card>.r .ctl .de .menu-list>li:hover {
+	background-color: 		var(--cl-denim)!important;
+	border-top: 			transparent;
+	border-right: 			transparent;
+	border-bottom: 			transparent;
+	border-left: 			transparent;
+	color: 					var(--cl-white);
+}
+
+.cp__plugins-item-card>.r .ctl .de .menu-list>li {
+	background-color: 		transparent;
+	border-top: 			transparent;
+	border-right: 			transparent;
+	border-bottom: 			transparent;
+	border-left: 			transparent;
+	border-radius: 			5px!important;
+	color: 					var(--cl-mineshaft);
+	font-family: 			'avenir next',avenir, 'Nunito Sans';
+}
+.dark-theme .cp__plugins-item-card>.r .ctl .de .menu-list>li, html[data-theme=dark] .cp__plugins-item-card>.r .ctl .de .menu-list>li {
+	background-color: 		transparent;
+	border-top: 			transparent;
+	border-right: 			transparent;
+	border-bottom: 			transparent;
+	border-left: 			transparent;
 	color: 					var(--cl-mutedwhite);
 }
 
