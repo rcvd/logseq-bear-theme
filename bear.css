@@ -1111,11 +1111,11 @@ html[data-theme=light] {
 	color: 					var(--cl-vulcan);
 }
 
-*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) textarea::selection {
+textarea::selection {
 	background-color: 		var(--cl-sail);
 	color: 					var(--cl-mineshaft);
 }
-.dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) textarea::selection), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) textarea::selection) {
+.dark-theme textarea::selection,  html[data-theme=dark] textarea::selection {
 	background-color: 		var(--cl-bigstone);
 	color: 					var(--cl-white);
 }
