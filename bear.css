@@ -292,6 +292,24 @@ html[data-theme=light] {
 	background-color: 		transparent;
 }
 
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-gallery);
+	border-right: 			1px solid var(--cl-gallery);
+	border-bottom: 			1px solid var(--cl-gallery);
+	border-left: 			1px solid var(--cl-gallery);
+	border-radius: 			15px;
+	color: 					var(--cl-iron);
+}
+.dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag) {
+	background-color: 		transparent;
+	border-top: 			1px solid var(--cl-shark);
+	border-right: 			1px solid var(--cl-shark);
+	border-bottom: 			1px solid var(--cl-shark);
+	border-left: 			1px solid var(--cl-shark);
+	color: 					var(--cl-jumbo);
+}
+
 .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-gallery);
 }
@@ -1058,7 +1076,7 @@ html[data-theme=light] {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			15px;
-	color: 					var(--cl-wildsand)!important;
+	color: 					var(--cl-wildsand);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1em;
 	opacity: 				1;
@@ -1069,7 +1087,7 @@ html[data-theme=light] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	color: 					var(--cl-vulcan)!important;
+	color: 					var(--cl-vulcan);
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a.tag {
@@ -1079,7 +1097,7 @@ html[data-theme=light] {
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			15px;
-	color: 					var(--cl-wildsand)!important;
+	color: 					var(--cl-wildsand);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1em;
 	opacity: 				1;
@@ -1090,7 +1108,7 @@ html[data-theme=light] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	color: 					var(--cl-vulcan)!important;
+	color: 					var(--cl-vulcan);
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) textarea::selection {
@@ -1466,7 +1484,7 @@ a svg {
 	border-top: 			1px solid var(--cl-athens);
 }
 .dark-theme #journals .journal-item,  html[data-theme=dark] #journals .journal-item {
-	border-top: 			var(--cl-x!);
+	border-top: 			1px solid var(--cl-black);
 }
 
 #left-sidebar .left-sidebar-inner {
@@ -1475,7 +1493,7 @@ a svg {
 }
 .dark-theme #left-sidebar .left-sidebar-inner,  html[data-theme=dark] #left-sidebar .left-sidebar-inner {
 	background-color: 		var(--cl-bunker)!important;
-	border-right: 			var(--cl-);
+	border-right: 			1px solid var(--cl-black);
 }
 
 #left-sidebar .favorites ul .favorite-item a:hover {
@@ -3384,7 +3402,7 @@ a svg {
 	margin-right: 	8px;
 }
 
- .ui__modal-panel {
+.ui__modal-panel {
  	background:  transparent!important;
  	border-radius: 10px;
  }
