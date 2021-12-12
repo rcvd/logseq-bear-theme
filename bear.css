@@ -276,7 +276,7 @@ html[data-theme=light] {
 	--webkit-box-shadow: 	none!important;
 }
 .dark-theme .cards-review, html[data-theme=dark] .cards-review {
-	background-color: 		var(--cl-mutedblack);
+	background-color: 		var(--cl-jungle);
 	border-top: 			1px solid var(--cl-darkgray);
 	border-right: 			1px solid var(--cl-darkgray);
 	border-bottom: 			1px solid var(--cl-darkgray);
@@ -1459,7 +1459,7 @@ a svg {
 	border-top: 			1px solid var(--cl-athens);
 }
 .dark-theme #journals .journal-item, html[data-theme=dark] #journals .journal-item {
-	border-top: 			1px solid var(--cl-black);
+	border-top: 			var(--cl-x!);
 }
 
 #left-sidebar .left-sidebar-inner {
@@ -1468,7 +1468,7 @@ a svg {
 }
 .dark-theme #left-sidebar .left-sidebar-inner, html[data-theme=dark] #left-sidebar .left-sidebar-inner {
 	background-color: 		var(--cl-bunker)!important;
-	border-right: 			1px solid var(--cl-black);
+	border-right: 			var(--cl-);
 }
 
 #left-sidebar .favorites ul .favorite-item a:hover {
