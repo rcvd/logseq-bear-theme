@@ -299,7 +299,7 @@ html[data-theme=light] {
 	border-bottom: 			1px solid var(--cl-gallery);
 	border-left: 			1px solid var(--cl-gallery);
 	border-radius: 			15px;
-	color: 					var(--cl-iron);
+	color: 					var(--cl-iron)!important;
 }
 .dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag) {
 	background-color: 		transparent;
@@ -307,7 +307,7 @@ html[data-theme=light] {
 	border-right: 			1px solid var(--cl-shark);
 	border-bottom: 			1px solid var(--cl-shark);
 	border-left: 			1px solid var(--cl-shark);
-	color: 					var(--cl-jumbo);
+	color: 					var(--cl-jumbo)!important;
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover {
@@ -317,7 +317,7 @@ html[data-theme=light] {
 	border-bottom: 			1px solid var(--cl-gallery);
 	border-left: 			1px solid var(--cl-gallery);
 	border-radius: 			15px;
-	color: 					var(--cl-iron);
+	color: 					var(--cl-iron)!important;
 }
 .dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref=card].tag:hover, *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=card].tag:hover) {
 	background-color: 		transparent;
@@ -325,7 +325,7 @@ html[data-theme=light] {
 	border-right: 			1px solid var(--cl-shark);
 	border-bottom: 			1px solid var(--cl-shark);
 	border-left: 			1px solid var(--cl-shark);
-	color: 					var(--cl-jumbo);
+	color: 					var(--cl-jumbo)!important;
 }
 
 .block-content .asset-container .ctl>a {
