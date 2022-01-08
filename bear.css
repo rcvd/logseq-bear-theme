@@ -3693,3 +3693,23 @@ a.tag {
 .block-control, .block-control:hover {
 	min-height: unset;
 }
+
+/* Add mobile enhancements */
+
+/* Fix top bar color unthemed in dark mode */
+
+.dark-theme,
+html[data-theme=dark] {
+	--ls-primary-background-color: var(--cl-jungle);
+}
+
+
+/* Fix mobile toolbar color unthemed*/
+
+#mobile-editor-toolbar {
+    background-color: var(--cl-jungle);
+}
+
+#mobile-editor-toolbar button {
+    background-color: var(--cl-alabaster);
+}
