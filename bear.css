@@ -3069,3 +3069,7 @@ b, strong {
 #left-sidebar .left-sidebar-inner a {
   color: var(--co-leftsidebar__menu-items);
 }
+
+#left-sidebar .new-page {
+  background-color: var(--cl-codgrey);
+}
