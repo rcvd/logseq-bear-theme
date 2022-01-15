@@ -3693,3 +3693,7 @@ a.tag {
 .block-control, .block-control:hover {
 	min-height: unset;
 }
+
+#left-sidebar .new-page {
+  background-color: var(--cl-codgrey);
+}
