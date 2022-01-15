@@ -3697,3 +3697,22 @@ a.tag {
 #left-sidebar .new-page {
   background-color: var(--cl-codgrey);
 }
+
+/* Add mobile enhancements */
+
+/* Fix top bar color unthemed in dark mode */
+
+.dark-theme,
+html[data-theme=dark] {
+	--ls-primary-background-color: var(--cl-jungle);
+}
+
+/* Fix mobile toolbar color unthemed*/
+
+#mobile-editor-toolbar {
+    background-color: var(--cl-jungle);
+}
+
+#mobile-editor-toolbar button {
+    background-color: var(--cl-alabaster);
+}
