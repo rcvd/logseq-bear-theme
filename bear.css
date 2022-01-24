@@ -1998,10 +1998,10 @@ a svg {
 	color: 					var(--cl-stardust);
 }
 
-#left-sidebar .new-page {
+#left-sidebar .new-page, .left-sidebar-inner .new-page {
 	background-color: 		var(--cl-codgrey);
 }
-.dark-theme #left-sidebar .new-page,  html[data-theme=dark] #left-sidebar .new-page {
+.dark-theme *:is(#left-sidebar .new-page, .left-sidebar-inner .new-page), html[data-theme=dark] *:is(#left-sidebar .new-page, .left-sidebar-inner .new-page) {
 	background-color: 		var(--cl-bunker);
 }
 
@@ -2201,6 +2201,20 @@ a svg {
 }
 .dark-theme .left-sidebar-inner::-webkit-scrollbar-thumb,  html[data-theme=dark] .left-sidebar-inner::-webkit-scrollbar-thumb {
 	background-color: 		var(--cl-darkgray);
+}
+
+#mobile-editor-toolbar {
+	background-color: 		var(--cl-alabaster);
+}
+.dark-theme #mobile-editor-toolbar,  html[data-theme=dark] #mobile-editor-toolbar {
+	background-color: 		var(--cl-vulcan);
+}
+
+#mobile-editor-toolbar button {
+	background-color: 		var(--cl-codgrey);
+}
+.dark-theme #mobile-editor-toolbar button,  html[data-theme=dark] #mobile-editor-toolbar button {
+	background-color: 		var(--cl-mutedwhite);
 }
 
 .ui__notifications button:hover svg {
