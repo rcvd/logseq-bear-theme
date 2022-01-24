@@ -3870,8 +3870,10 @@ a.tag {
 
 .block-children-left-border {
   width: 2px;
+  left:  0px;
 }
 
 .block-children-left-border:hover {
   width: 4px;
+  left:  -1px;
 }
