@@ -3942,6 +3942,7 @@ a.tag {
 
 #logseq-journals-calendar_iframe {
   background: transparent; 
+  border: none;
 }
 .ui__modal-panel {
   background: transparent !important;
