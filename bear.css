@@ -1065,7 +1065,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-iframe {
+#main-content-container iframe {
 	background-color: 		var(--cl-white);
 	border-top: 			1px solid var(--cl-gainsboro);
 	border-right: 			1px solid var(--cl-gainsboro);
@@ -1073,7 +1073,7 @@ iframe {
 	border-left: 			1px solid var(--cl-gainsboro);
 	border-radius: 			0px;
 }
-.dark-theme iframe,  html[data-theme=dark] iframe {
+.dark-theme #main-content-container iframe,  html[data-theme=dark] #main-content-container iframe {
 	background-color: 		var(--cl-rangoon);
 	border-top: 			1px solid var(--cl-black);
 	border-right: 			1px solid var(--cl-black);
@@ -3938,11 +3938,6 @@ a.tag {
 .block-children-left-border:hover {
   width: 4px;
   left:  -1px;
-}
-
-#logseq-journals-calendar_iframe {
-  background: transparent; 
-  border: none;
 }
 .ui__modal-panel {
   background: transparent !important;
