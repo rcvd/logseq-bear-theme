@@ -551,6 +551,40 @@ html:not(.is-native-android) {
 	border-left: 			1px solid var(--cl-darkgray);
 }
 
+.block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-gainsboro);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-mineshaft);
+}
+.dark-theme .block-ref,  html[data-theme=dark] .block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-darkgray);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-mutedwhite);
+}
+
+.block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-gainsboro);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-jumbo);
+}
+.dark-theme .block-ref:hover,  html[data-theme=dark] .block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-darkgray);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-rollingstone);
+}
+
 .open-block-ref-link {
 	background-color: 		var(--cl-alabaster);
 	border-top: 			1px solid var(--cl-gainsboro);
@@ -677,6 +711,13 @@ div[data-refs-self*='"card"'] {
 	border-left: 			1px solid var(--cl-darkgray);
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
+}
+
+.rotating-arrow svg {
+	color: 					var(--cl-);
+}
+.dark-theme .rotating-arrow svg,  html[data-theme=dark] .rotating-arrow svg {
+	color: 					var(--cl-);
 }
 
 .form-checkbox:checked {
@@ -1117,16 +1158,20 @@ iframe {
 }
 
 .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-valencia);
 }
 .dark-theme .page-ref:hover,  html[data-theme=dark] .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
 .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-valencia);
 }
 .dark-theme .page-ref,  html[data-theme=dark] .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
@@ -1766,6 +1811,7 @@ a svg {
 	border-radius: 			5px;
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 }
 .dark-theme #left-sidebar .favorites ul .favorite-item a,  html[data-theme=dark] #left-sidebar .favorites ul .favorite-item a {
 	background-color: 		transparent;
@@ -1811,6 +1857,7 @@ a svg {
 #left-sidebar .favorites > div.header a {
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 	font-weight: 			400;
 	opacity: 				1!important;
 }
@@ -1930,6 +1977,7 @@ a svg {
 #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 	font-weight: 			400;
 }
 .dark-theme #left-sidebar nav[aria-label='Sidebar'] div.relative a span,  html[data-theme=dark] #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
@@ -1992,6 +2040,7 @@ a svg {
 #left-sidebar .nav-header > div a span {
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 	font-weight: 			400;
 }
 .dark-theme #left-sidebar .nav-header > div a span,  html[data-theme=dark] #left-sidebar .nav-header > div a span {
@@ -2094,6 +2143,7 @@ a svg {
 	border-radius: 			5px;
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 }
 .dark-theme #left-sidebar .recent ul .recent-item a,  html[data-theme=dark] #left-sidebar .recent ul .recent-item a {
 	background-color: 		transparent;
@@ -2167,6 +2217,7 @@ a svg {
 #left-sidebar .recent > div.header a {
 	color: 					var(--cl-silver);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 	font-weight: 			400;
 	opacity: 				1!important;
 }
@@ -3662,6 +3713,17 @@ a svg {
 	color: 					var(--cl-mutedwhite);
 }
 
+/* Fixes for block alignments */
+#lazy-blocks .flex.pr-2 {
+  justify-content: flex-start!important;
+  align-items: flex-start!important;
+}
+
+.block-content,
+textarea {
+  line-height: 24px;
+}
+
 /* Fixes for command palette and search */
 .cp__palette-main .chosen {
   background: transparent;
@@ -3780,7 +3842,7 @@ a {
 .new-page a.item .ti,
 .cp__sidebar-left-layout nav[aria-label="Sidebar"] div.relative a .ti,
 .cp__sidebar-left-layout .nav-header > div a .ti {
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 .white-theme .form-checkbox:checked,
@@ -3859,7 +3921,7 @@ a.tag {
   background: transparent;
 }
 
-.block-control,
+.block-control, 
 .block-control:hover {
   min-height: unset;
 }
@@ -3876,4 +3938,17 @@ a.tag {
 .block-children-left-border:hover {
   width: 4px;
   left:  -1px;
+}
+
+#logseq-journals-calendar_iframe {
+  background: transparent; 
+}
+.ui__modal-panel {
+  background: transparent !important;
+  border-radius: 10px;
+}
+
+.block-control,
+.block-control:hover {
+  min-height: unset;
 }
