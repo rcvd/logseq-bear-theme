@@ -471,6 +471,7 @@ html:not(.is-native-android) {
 
 .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-gallery);
+	opacity: 				;
 }
 .dark-theme .block-content .asset-container .ctl>a,  html[data-theme=dark] .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-charcoal);
@@ -478,6 +479,7 @@ html:not(.is-native-android) {
 
 .block-content .asset-container .ctl>a svg {
 	fill: 		var(--cl-mineshaft);
+	opacity: 				;
 }
 .dark-theme .block-content .asset-container .ctl>a svg,  html[data-theme=dark] .block-content .asset-container .ctl>a svg {
 	fill: 		var(--cl-white);
@@ -522,16 +524,23 @@ html:not(.is-native-android) {
 }
 
 .block-parents a.page-ref:hover {
+	background-color: 		var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-radius: 			;
 	color: 					var(--cl-magnesium);
 }
 .dark-theme .block-parents a.page-ref:hover,  html[data-theme=dark] .block-parents a.page-ref:hover {
+	background-color: 		var(--cl-);
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-chicago);
 }
 
 .block-parents a.page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-magnesium);
 }
 .dark-theme .block-parents a.page-ref,  html[data-theme=dark] .block-parents a.page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-chicago);
 }
 
@@ -922,6 +931,7 @@ div[data-refs-self*='"card"'] {
 	background-color: 		var(--cl-alabaster);
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
+	font-size: 				;
 }
 .dark-theme *:is(*:is(#main-content-container, #right-sidebar)), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar)) {
 	background-color: 		var(--cl-jungle);
@@ -976,6 +986,7 @@ div[data-refs-self*='"card"'] {
 
 .external-link:hover {
 	color: 					var(--cl-valencia);
+	text-decoration: 		;
 }
 .dark-theme .external-link:hover,  html[data-theme=dark] .external-link:hover {
 	color: 					var(--cl-maya);
@@ -983,6 +994,7 @@ div[data-refs-self*='"card"'] {
 
 .external-link {
 	color: 					var(--cl-valencia);
+	text-decoration: 		;
 }
 .dark-theme .external-link,  html[data-theme=dark] .external-link {
 	color: 					var(--cl-maya);
@@ -995,7 +1007,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-mutedwhite);
 }
 
-*:is(.editor-inner .h1, .ls-block h1) {
+*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
@@ -1003,12 +1015,12 @@ div[data-refs-self*='"card"'] {
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h1, .ls-block h1)), html[data-theme=dark] *:is(*:is(.editor-inner .h1, .ls-block h1)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .h2, .ls-block h2) {
+*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
@@ -1016,52 +1028,52 @@ div[data-refs-self*='"card"'] {
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h2, .ls-block h2)), html[data-theme=dark] *:is(*:is(.editor-inner .h2, .ls-block h2)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .h3, .ls-block h3) {
+*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1.1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h3, .ls-block h3)), html[data-theme=dark] *:is(*:is(.editor-inner .h3, .ls-block h3)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)) {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .h4, .ls-block h4) {
+*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h4, .ls-block h4)), html[data-theme=dark] *:is(*:is(.editor-inner .h4, .ls-block h4)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)) {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .h5, .ls-block h5) {
+*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h5, .ls-block h5)), html[data-theme=dark] *:is(*:is(.editor-inner .h5, .ls-block h5)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)) {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .h6, .ls-block h6) {
+*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h6, .ls-block h6)), html[data-theme=dark] *:is(*:is(.editor-inner .h6, .ls-block h6)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)) {
 	color: 					var(--cl-botticelli);
 }
 
@@ -1364,6 +1376,15 @@ a.tag {
 	color: 					var(--cl-vulcan);
 }
 
+input::selection {
+	background-color: 		var(--cl-sail);
+	color: 					var(--cl-mineshaft);
+}
+.dark-theme input::selection,  html[data-theme=dark] input::selection {
+	background-color: 		var(--cl-bigstone);
+	color: 					var(--cl-white);
+}
+
 textarea::selection {
 	background-color: 		var(--cl-sail);
 	color: 					var(--cl-mineshaft);
@@ -1494,11 +1515,11 @@ textarea::selection {
 	background-color: 		transparent;
 }
 
-.datepicker td.active, .datepicker td.active:hover {
+.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover {
 	background-color: 		var(--cl-gallery);
 	color: 					var(--cl-mineshaft);
 }
-.dark-theme *:is(.datepicker td.active, .datepicker td.active:hover), html[data-theme=dark] *:is(.datepicker td.active, .datepicker td.active:hover) {
+.dark-theme *:is(.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover), html[data-theme=dark] *:is(.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover) {
 	background-color: 		var(--cl-rangoon);
 	color: 					var(--cl-white);
 }
@@ -2538,9 +2559,12 @@ a svg {
 }
 
 .ti-filter:hover {
+	background-color: 		var(--cl-);
+	border-radius: 			;
 	color: 					var(--cl-jumbo);
 }
 .dark-theme .ti-filter:hover,  html[data-theme=dark] .ti-filter:hover {
+	background-color: 		var(--cl-);
 	color: 					var(--cl-mutedwhite);
 }
 
@@ -2566,9 +2590,11 @@ a svg {
 }
 
 #right-sidebar .sidebar-item .close:hover {
+	background-color: 		var(--cl-);
 	opacity: 				1!important;
 }
 .dark-theme #right-sidebar .sidebar-item .close:hover,  html[data-theme=dark] #right-sidebar .sidebar-item .close:hover {
+	background-color: 		var(--cl-);
 }
 
 #right-sidebar .sidebar-item .close {
@@ -3279,6 +3305,22 @@ a svg {
 	color: 					var(--cl-white);
 }
 
+.cp__settings-inner .panel-wrap {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-left: 			var(--cl-);
+	border-radius: 			;
+}
+.dark-theme .cp__settings-inner .panel-wrap,  html[data-theme=dark] .cp__settings-inner .panel-wrap {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-left: 			var(--cl-);
+}
+
 .cp__settings-inner>article::-webkit-scrollbar-track {
 	background-color: 		var(--cl-alabaster);
 }
@@ -3711,17 +3753,6 @@ a svg {
 	border-bottom: 			1px solid var(--cl-darkgray);
 	border-left: 			1px solid var(--cl-darkgray);
 	color: 					var(--cl-mutedwhite);
-}
-
-/* Fixes for block alignments */
-#lazy-blocks .flex.pr-2 {
-  justify-content: flex-start!important;
-  align-items: flex-start!important;
-}
-
-.block-content,
-textarea {
-  line-height: 24px;
 }
 
 /* Fixes for command palette and search */
