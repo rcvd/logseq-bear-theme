@@ -853,7 +853,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-mutedwhite);
 }
 
-*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1) {
+*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1) :not(.block-ref *) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
@@ -866,7 +866,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2) {
+*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2) :not(.block-ref *) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
@@ -879,7 +879,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3) {
+*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3) :not(.block-ref *) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1.1rem;
@@ -890,7 +890,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4) {
+*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4) :not(.block-ref *) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
@@ -901,7 +901,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5) {
+*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5) :not(.block-ref *) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
@@ -912,7 +912,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-botticelli);
 }
 
-*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6) {
+*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6) :not(.block-ref *) {
 	color: 					var(--cl-mineshaft);
 	font-family: 			'avenir next',avenir, 'Nunito Sans';
 	font-size: 				1rem;
